@@ -31,7 +31,7 @@ The AI-Powered Knowledge Assistant is a multi-modal AI system that integrates **
 
 ---
 
-Installation & Setup
+### Installation & Setup
 
 1️⃣ Clone the Repository
 
@@ -42,17 +42,23 @@ cd Week-8-Hands-On
 
 2️⃣ Set Up a Virtual Environment (Optional but Recommended)
 
+```bash
 python -m venv venv
 source venv/bin/activate # On Mac/Linux
 venv\Scripts\activate # On Windows
+```
 
 3️⃣ Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 4️⃣ Run the Flask API (For Text Generation)
 
+```bash
 python flask_app.py
+```
 
 5️⃣ Set Up Stable Diffusion (Google Colab)
 
@@ -65,14 +71,20 @@ Update the COLAB_API_URL variable in app.py with the new Ngrok URL.
 
 streamlit run app.py
 
-Usage
-Open the Streamlit UI (http://localhost:8501).
-Enter a question or prompt in the text box.
-Click "Generate Response" to retrieve relevant information and generate text.
-The AI will display a response and send it to Stable Diffusion for image generation.
-The generated image will appear below the response.
+---
 
-Future Enhancements
-🔹 Upgrade to larger LLM models for better response generation.
-🔹 Improve image customization options (e.g., style, colors, aspect ratio).
-🔹 Deploy the entire system to the cloud (AWS, Hugging Face Spaces, etc.).
+### Usage
+
+- Open the Streamlit UI (http://localhost:8501).
+- Enter a question or prompt in the text box.
+- Click "Generate Response" to retrieve relevant information and generate text.
+- The AI will display a response and send it to Stable Diffusion for image generation.
+- The generated image will appear below the response.
+
+---
+
+### Future Enhancements
+
+- Upgrade to larger LLM models for better response generation.
+- Improve image customization options (e.g., style, colors, aspect ratio).
+- Deploy the entire system to the cloud (AWS, Hugging Face Spaces, etc.).
